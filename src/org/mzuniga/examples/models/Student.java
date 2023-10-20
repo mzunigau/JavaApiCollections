@@ -1,4 +1,4 @@
-package org.mzuniga.examples.modelo;
+package org.mzuniga.examples.models;
 
 public class Student implements Comparable<Student>{
 

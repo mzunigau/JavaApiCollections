@@ -1,6 +1,6 @@
 package org.mzuniga.examples.set;
 
-import org.mzuniga.examples.modelo.Student;
+import org.mzuniga.examples.models.Student;
 
 import java.util.Set;
 import java.util.TreeSet;
