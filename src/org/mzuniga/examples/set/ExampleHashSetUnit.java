@@ -3,6 +3,7 @@ package org.mzuniga.examples.set;
 import org.mzuniga.examples.models.Student;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -20,6 +21,19 @@ public class ExampleHashSetUnit {
         st.add(new Student("Lucas", 3));
 
         System.out.println(st);
+
+        for (Student stu: st){
+            System.out.println(stu);
+        }
+
+        System.out.println("Using iterator");
+        Iterator<Student> student = st.iterator();
+        while (student.hasNext()){
+            Student sdt = student.next();
+            System.out.println(sdt.getName());
+        }
+        System.out.println("ForEach Lambda");
+        st.forEach(s -> System.out.println(s));
 
     }
 }
